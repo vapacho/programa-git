@@ -1,0 +1,170 @@
+/*
+Ancho del sitio 1000px
+mínimo ancho adaptable 600px
+
+/* Reset de márgenes y padding, y configuración del box-sizing */  
+
+
+/* Estilo del menú principal */  
+/* Estilo del formulario */  
+/* Estilos generales del cuerpo */  
+body {  
+    margin: 100;  
+    font-family: 'cursiva', sans-serif;
+    background-color: #d5f5d5a2; /* Verde claro */  
+    color: #5f4d11ee; /* Color de texto */  
+}  
+
+/* Estilo del encabezado y títulos */  
+h1, h2 {  
+    color: #74af16; /* Verde oscuro */
+    text-align: center;  
+}  
+
+h2 {  
+    margin: 100px 0;  
+}  
+
+/* Estilo del menú principal */  
+#cajamenuprincipal {
+    margin: auto;
+    padding: 10px 0;
+    min-width: 600px;
+    max-width: 1000px;
+    text-align: center;
+    background-color: #7aee0e; /* Color de fondo más suave */
+    border-top: 3px solid #4fe7ec;
+    border-bottom: 3px solid #f10ccb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil */
+}
+#cajamenuprincipal ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#cajamenuprincipal ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#cajamenuprincipal a {
+    color: #0d0e0d; /* Color de texto más oscuro para mejor legibilidad */
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4b8b25;
+    text-shadow: 1px 1px 2px rgba(241, 15, 15, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+#cajamenuprincipal a:hover {
+    background-color: #053147; /* Cambia a un azul más atractivo al pasar el cursor */
+    color: rgb(206, 24, 24);
+}
+
+#cajamenuprincipal ul li {
+    margin: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+}
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #c2ec37; /* Verde natural más claro */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+     background-color: #4CAF50; /* Verde natural */
+     color: white; /* Color del texto */
+     padding: 10px; /* Aumentar el espacio alrededor del botón */
+  }
+  
+  /* Estilo para la imagen y texto */
+  figure {
+     margin-top: 20px;
+     width: auto;
+     text-align:center;
+  }
+  
+  #titulo {
+   font-size: 24px; /* Tamaño de fuente más grande */
+   color:#4CAF50; /* Verde natural*/
+  }
+  
+  #descripcionweb {
+   color:#333333; 
+  }
+.menu-button {  
+    background-color: transparent; /* Fondo transparente para los botones */  
+    border: none; /* Sin borde */  
+    color: rgb(235, 143, 23);  
+    font-weight: bold;  
+    padding: 10px 20px;  
+    cursor: pointer; /* Cambia el cursor cuando pasas sobre el botón */  
+    transition: background-color 3s ease, color 3s ease; /* Transiciones suaves para fondo y color */  
+}  
+
+.menu-button:hover {  
+    background-color: #4caf50; /* Verde más claro al pasar el mouse */  
+    color: #fff; /* Cambiar color del texto al blanco al hacer hover */  
+}  
+
+/* Estilo del contenedor principal */  
+#cajaContenido {  
+    max-width: 1200px; /* Ancho máximo del contenedor */  
+    margin: 20px auto; /* Centramos el contenedor */  
+    padding: 20px;  
+    display: flex; /* Para mostrar contenido lado a lado */  
+}  
+
+/* Estilo de las cajas de contenido dentro de cajaEntradas */  
+#cajaEntradas {  
+    flex: 3; /* Ocupa 3 partes del espacio */  
+    background-color: #dce6c8; /* Verde muy claro */  
+    border-radius: 10px; /* Bordes redondeados */  
+    padding: 20px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+    margin-right: 20px; /* Espaciado entre cajaEntradas y aside */  
+}  
+
+/* Estilo de la barra lateral (aside) */  
+aside {  
+    flex: 1; /* Ocupa 1 parte del espacio */  
+    background-color: #319e4c; /* Color arena claro */  
+    border-radius: 10px; /* Bordes redondeados */  
+    padding: 15px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+}  
+
+/* Estilo del footer */  
+footer {  
+    background-color: #388e3c; /* Verde fuerte */  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+/* Adaptabilidad a dispositivos */  
+@media (max-width: 768px) {  
+    .menu-principal {  
+        flex-direction: column; /* Una columna en pantallas pequeñas */  
+        align-items: right;  
+    }  
+    #cajaContenido {  
+        flex-direction: column; /* Colocar contenido en columnas en pantallas pequeñas */  
+    }  
+    #cajaEntradas {  
+        margin-right: 100; /* Eliminar margen derecho en pantallas pequeñas */  
+        margin-bottom: 50px; /* Margen inferior para separación */  
+    }  
+}
